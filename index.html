@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+  </style>
+</head>
+
+<body>
+  <div id="sample-textarea">
+    <input type="checkbox" name="enabled" v-model="enabled">
+    <label for="enabled">
+      enabled
+    </label>
+    <div>
+      <textarea name="contact" row="5" col="60" v-attr="disabled: !enabled">サンプルテキストです</textarea>
+    </div>
+  </div>
+</body>
+
+<script src="https://unpkg.com/vue"></script>
+<script>
+  var app5 = new Vue({
+      el: '#sample-textarea',
+      data: {
+        enabled: false
+      }
+    }
+  })
+</script>
+
+</html>
