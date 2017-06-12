@@ -8,12 +8,15 @@
 
 <body>
   <div id="sample-textarea">
-    <input type="checkbox" name="enabled" v-model="enabled">
+    <input type="checkbox" id="enabled" name="enabled" v-model="enabled">
     <label for="enabled">
       enabled
     </label>
     <div>
-      <textarea name="contact" row="5" col="60" v-attr="disabled: !enabled">サンプルテキストです</textarea>
+      <label for="contact">
+        contact
+      </label>
+      <textarea id="contact" name="contact" row="5" col="60" v-attr="disabled: !enabled">サンプルテキストです</textarea>
     </div>
   </div>
 </body>
